@@ -5,9 +5,9 @@ Build with:
 
 > mkdir build && cd build
 
-> cmake -DINSTALL_PREFIX=/usr ../
+> cmake -DCMAKE_INSTALL_PREFIX=/usr ../
 
-> make -j<nproc>
+> make
 
 > sudo make install
 
