@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<block>
+	<name>Packet Decoder (iSmartAlarm)</name>
+  	<key>ism_ism_packet_decoder</key>
+	<category>iSmartAlarm</category>
+	<import>import ism</import>
+	<make>ism.ism_packet_decoder($target_queue, $do_crc16_check, $verbose)</make>
+
+        <param>
+                <name>Target Message Queue</name>
+                <key>target_queue</key>
+                <type>raw</type>
+        </param>
+
+        <param>
+                <name>Check CRC16</name>
+                <key>do_crc16_check</key>
+                <type>enum</type>
+                <option>
+                        <name>Yes</name>
+                        <key>True</key>
+                </option>
+                <option>
+                        <name>No</name>
+                        <key>False</key>
+                </option>
+        </param>
+
+        <param> 
+                <name>Verbose</name>
+                <key>verbose</key>
+                <type>enum</type>
+                <option>
+                        <name>Yes</name>
+                        <key>True</key>
+                </option>
+                <option>
+                        <name>No</name>
+                        <key>False</key>
+                </option>
+        </param>
+	<sink>
+    		<name>in</name>
+    		<type>byte</type>
+  	</sink>
+  
+	<source>
+    		<name>out</name>
+    		<type>byte</type>
+  	</source>
+</block>
+
+
+
