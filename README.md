@@ -3,13 +3,13 @@ GNURadio block for decoding iSmartAlarm radio device packets.
 
 Build with:
 
-> mkdir build && cd build
+ `mkdir build && cd build`
 
-> cmake -DCMAKE_INSTALL_PREFIX=/usr ../
+ `cmake -DCMAKE_INSTALL_PREFIX=/usr ../`
 
-> make
+ `make`
 
-> sudo make install
+ `sudo make install`
 
 Search for "iSmartAlarm" within gnuradio-companion block list.
 
@@ -22,3 +22,6 @@ Block Options:
 > CRC16: Only print packets that pass CRC16 check.
 
 > Verbose: Print raw packets from C file stdout to console.
+
+Copyright (c) 2017 Dayton Pidhirney Seekintoo Ltd.
+
